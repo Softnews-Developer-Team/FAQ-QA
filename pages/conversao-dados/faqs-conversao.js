@@ -5,26 +5,26 @@ export const faqs = [
     },
     {
         pergunta: "Quando fez o processo de teste e não acha nenhuma inconsistências, é preciso marcar e/ou realizar o processo oficial?",
-        resposta: "<p> &#x1F6A7; Em construção &#x1F6A7;</p>"
+        resposta: "<h2>Banco em Uso</h2><p>Se após a conferencia, não foi localizado nenhuma inconsitência, deve ser feito então o <mark style='background-color: #FAAF00'>agendamento do processo oficial</mark>, o agendamento deve ser realizado de maneira a alinhar uma data e horário favoraveis ao cliente e ao desenvolvedor, simultaneamente.</p><hr>  <h2>Banco Modelo</h2><p>Se após a conferência, não foi localizado nenhuma inconsitência, deve ser feito então a <mark style='background-color: #FAAF00'>verificação da data do backup concorrente utilizado</mark>.</p><ul><li><b>Mais de 7 dias:</b> Realizar uma nova coleta, para que a conversão seja entregue ao setor implantação com os dados mais atualizados.</li><li><b>Menos de 7 dias:</b> Avaliar com o cliente se o banco pode ser entregue com as informações da data do backup ou se precisa que seja executando novamente com um backup mais recente.</li></ul>"
     },
     {
         pergunta: "Qual a diferença do processo de conversão via eSocial para as demais conversões?",
-        resposta: "<p> &#x1F6A7; Em construção &#x1F6A7;</p>"
+        resposta: "No processo de conversão de dados via eSocial, <mark style='background-color: #FAAF00'>os dados são coletados e importados do portal eSocial</mark>. Em um processo de conversão de sistema concorrente, os dados são extraidos de uma base de dados de outro sistema de contabilidade.<br><br><b>Formas de realizar a conversão de dados via eSocial</b><br><hr><b>1º - via certificado digital:</b><p>Para executar a conversão via certificado digital, será necessário</p><ul><li>O certificado digital da empresa ou do contator com procuração para acessar os dados da empresa;</li><li>A senha do certificado digital;</li><li>A relação com os CNPJ's das empresas que serão convertidas.</li></ul><b>2º - via evento XML:</b><p>Para executar a conversão via evento XML, será necessário</p><ul><li>Os arquivos dos eventos XML da empresa que será convertida; (esses eventos podem coletados pelo próprio sistema concorrente que o cliente já utiliza)</li><li>Os arquivos devem ser colocados em uma pasta, nomeada com o CNPJ da empresa.</li></ul><hr>Para saber quais são os eventos coletados e importados no processo, você pode verificar <a href='https://sgd.dominiosistemas.com.br/sgsa/faces/noticia.html?noticia=19326' target='_blank'>aqui</a>."
     },
     {
         pergunta: "Centralização de filiais",
-        resposta: "<p> &#x1F6A7; Em construção &#x1F6A7;</p>"
+        resposta: "Caso o cliente opte por realizar a conversão de dados <b>Centralizando</b> as filiais, <mark style='background-color: #FAAF00'>elas serão cadastradas como filiais dentro do cadastro da empresa matriz</mark>. Ao invez de ser criado um código a parte para cada uma das filiais, além da matriz. <br><br>Exemplo:<br><br>Filiais não centralizadas (Controle &gt; Empresas):<ol><li>Empresa Matriz - CNPJ: 00.000.000/0001-00</li><li>Empresa Filial 2 - CNPJ: 00.000.000/0002-00</li><li>Empresa Filial 3 - CNPJ: 00.000.000/0003-00</li></ol>Filiais centralizadas (Arquivo &gt; Filiais):<ol><li>Empresa Matriz - CNPJ: 00.000.000/0001-00</li><ul><li>Filial 2 - CNPJ: 00.000.000/0002-00</li><li>Filial 3 - CNPJ: 00.000.000/0003-00</li></ul></ol>Ou seja, as Empresas “2” e “3”, passaram a ser as filiais “2” e “3” dentro da matriz."
     },
     {
         pergunta: "Onde verificar o faseamento da empresa?",
-        resposta: "<p> &#x1F6A7; Em construção &#x1F6A7;</p>"
+        resposta: "O cliente consegue visualizar o faseamento da empresa, acessando o portal do eSocial indo a área com os dados da empresa"
     },
     {
         pergunta: "Conversão concluida, para quem enviar?",
-        resposta: "<p> &#x1F6A7; Em construção &#x1F6A7;</p>"
+        resposta: "<h2>Banco em Uso</h2><p><mark style='background-color: #FAAF00'>Dever ser realizado os tramites de conclusão</mark> via email, Skype e tramite na SSC.</p><br>Os tramites podem ser localizados em:  U:/Desenvolvimento/Fluxo e Checklist - Q.A/[ região ]/Conversão de dados/Banco em Uso/6° Finalização<hr><h2>Banco Modelo</h2><p><mark style='background-color: #FAAF00'>Deve ser entregue o banco ao setor de implantação</mark>, e logo após realizar os tramites de conclusão via email, Skype e tramite na SSC.</p><br>Os tramites podem ser localizados em: U:/Desenvolvimento/Fluxo e Checklist - Q.A/[ região ]/Conversão de dados/Banco Modelo/5° Finalização"
     },
     {
         pergunta: "Como utilizar o Utilitário ETL para coleta de backups concorrentes?",
-        resposta: "<p> &#x1F6A7; Em construção &#x1F6A7;</p>"
+        resposta: "A coleta utilizando o Utilitário ETL é uma opção alternativa para coletar o backup de sistemas concorrentes, ou as vezes sendo indicado no manual de conversão de dados como o unico modo de coleta.<h2>Modo de utilização:</h2><ol><li>Dentro da máquina servidor do cliente;</li><li>Vá no seguinte caminho do FTP: <code style='font-size: 1rem'>/unidades/Pub/Conversores/[Conversor Thomson Reuters]/[ Utilitarios ]</code> e baixe o arquivo <b>Utilitario ETL.zip</b> ou o utilitário expecifico do sistema;</li><li>Descompacte-o e execute o arquivo o arquivo: <b>Extrator.exe</b></li><li>Leia com atenção as intruções de uso &gt; Prosseguir &gt; Selecione o sistema concorrente &gt; Iniciar.</li><li>Colete o arquivo <b>extract.zip</b></li></ol>"
     }
 ]
