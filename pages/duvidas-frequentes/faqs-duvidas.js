@@ -10,5 +10,9 @@ export const faqs = [
     {
       pergunta: "Como saber quem deverá fazer a substituição nos processo de banco em uso?",
       resposta: "<p>Para saber quem fará a substituição da base dados em processos de Banco em Uso, basta apenas observar o seguinte ponto:</p><li><b>Base Dominio Local: </b> Substituição será feita pelo time de Q.A.</li><li><b>Base Domínio Web: </b> Substituição será feita pelo desenvolvedor</li>"
+    },
+    {
+      pergunta: "O sistema Domínio gera backup individual de empresas?",
+      resposta: "<p>Atualmente o sistema Domínio não consegue gerar um backup individual por empresas.</p><br>O paliativo para esse processo é realizar um <b>processo de Exporta/Importa</b> do licenciado para ele mesmo, onde o banco DESTINO será um banco modelo."
     }
   ]
